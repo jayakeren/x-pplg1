@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Login X-PPLG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Halaman Login -->
+  <div class="container" id="loginPage">
+    <h2>X-PPLG DEVELOPMENT</h2>
+    <h3>Kelas: X-PPLG 1</h3>
+
+    <input type="text" id="nama" placeholder="Masukkan Nama">
+    
+    <select>
+      <option>X-PPLG 1</option>
+      <option>X-PPLG 2</option>
+      <option>Raja Ganteng</option>
+    </select>
+
+    <input type="password" id="password" placeholder="Masukkan Password">
+
+    <div class="show-password">
+      <label>
+        <input type="checkbox" onclick="togglePassword()"> Lihat Password
+      </label>
+    </div>
+
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- Halaman Setelah Login -->
+  <div class="success-page" id="successPage">
+    <h2>✅ Login Berhasil!</h2>
+    <p>Selamat datang di halaman dashboard X-PPLG 1 🎉</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
